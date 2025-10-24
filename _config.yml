@@ -15,19 +15,10 @@ website: https://betterthanever2.github.io/
 darkmode: false
 
 # Social links
-# twitter_username: facespics
 github_username:  betterthanever2
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
 # facebook_username: jekyll
-# flickr_username: jekyll
-# instagram_username: jameswgrant
 linkedin_username: denis-shvetsov
-# xing_username: jekyll
-# pinterest_username: jekyll
-# youtube_username: globalmtb
 # googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
 additional_links:
@@ -72,6 +63,20 @@ content:
         description: | # this will include new lines to allow paragraphs
           I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
+  - title: Skills # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Fixing LLM-generated slop
+        quote: >
+          Karpathy is right. LLMs are just stochastic parrots. The sooner we accept this, the sooner we can get to work fixing the slop they generate.
+        # description: | # this will include new lines to allow paragraphs
+        #   I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+      - layout: center
+        title: Python
+        description: | # this will include new lines to allow paragraphs
+          As a general-purpose language, Python is great for all kinds of things.
+
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -94,9 +99,9 @@ content:
       - layout: left
         title: Giggster
         sub_title: Data analysis & visualization specialist
-        caption: November 2020 - ...
+        caption: November 2020 - August 2021
         description: | # this will include new lines to allow paragraphs
-            In my 2nd iteration with Giggster I’m working on the data accumulation and analysis project \- basically a custom ETL in its own right \- with a data visualization module (Python \+ Plotly \+ Dash) as its ultimate outlet.
+            In my 2nd iteration with Giggster I was working on the data accumulation and analysis project \- basically a custom ETL in its own right \- with a data visualization module (Python \+ Plotly \+ Dash) as its ultimate outlet.
       - layout: left
         title: Business Process Technology
         sub_title: Business analyst
@@ -141,7 +146,7 @@ content:
         #   During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
 
         #   I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
-      - layout: right
+      - layout: left
         title: Russian State University of Cinema in Moscow
         caption: 2006 - 2008
         # sub_title: Master's degree in International Relations
