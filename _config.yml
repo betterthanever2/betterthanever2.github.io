@@ -67,15 +67,17 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Fixing LLM-generated slop
-        quote: >
-          Karpathy is right. LLMs are just stochastic parrots. The sooner we accept this, the sooner we can get to work fixing the slop they generate.
-        # description: | # this will include new lines to allow paragraphs
-        #   I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
-      - layout: center
         title: Python
         description: | # this will include new lines to allow paragraphs
-          As a general-purpose language, Python is great for all kinds of things.
+          scripting, <mark>uv</mark>, FastAPI, <mark>Pydantic</mark>, 
+      - layout: left
+        title: Business Analysis
+        description: | # this will include new lines to allow paragraphs
+          <mark>Project Management</mark>, Organizational Skills, <mark>Wireframing</mark>, Prototyping, <mark>Technical Documentation</mark>, Use Cases, <mark>User Stories</mark>, UML, <mark>BPMN</mark>, Benchmark Analysis, <mark>BABOK</mark>, Product Development, <mark>Business Process Optimization</mark>, Communication, <mark>Requirements analysis</mark>, Stakeholder engagement 
+      - layout: left
+        title: Tinkering
+        description: | # this will include new lines to allow paragraphs
+          <mark>Fixing LLM-generated slop</mark>
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
