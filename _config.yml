@@ -16,15 +16,13 @@ darkmode: false
 
 # Social links
 github_username:  betterthanever2
-# facebook_username: jekyll
 linkedin_username: denis-shvetsov
-# googleplus_username: +jekyll
 
 # Additional icon links
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -39,29 +37,25 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Hi, my name is Denis and I love developing complex software systems. Big fan of event-driven architectures.
+  I started small, as a technical writer, and taught myself everything one needs to build interconnected and pulsing network.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  I am most skilled in: <mark>NATS</mark>, <mark>Python</mark> and <mark>databases</mark>
 
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        title: Wapaganda
+        link: github.com/subjective-agency/wapatools
+        link_text: Project source (access on request)
         quote: >
           This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          Wapaganda is a coherent, multi-component system for analyzing media landscape around current Russo-Ukrainian war
+          I started it for personal reasons, but also as a way to learn various technologies.
+          The system is NATS-based, with over 10 different services working in concert to collect, process, and analyze data from multiple sources.
 
   - title: Skills # Title for the section
     layout: list # Type of content section (list/text)
@@ -69,11 +63,11 @@ content:
       - layout: left
         title: System Architecture
         description: | # this will include new lines to allow paragraphs
-          <mark>NATS</mark> <mark>Docker</mark> <mark>Redis</mark> <mark>Microservices</mark> <mark>CI/CD</mark>
+          <mark>NATS</mark> <mark>Docker</mark> <mark>Redis</mark> <mark>Microservices</mark> <mark>git</mark> <mark>Independent Hosting</mark>
       - layout: left
         title: Python
         description: | # this will include new lines to allow paragraphs
-          <mark>scripting</mark> <mark>uv</mark> <mark>FastAPI</mark> <mark>Pydantic</mark>
+          <mark>scripting</mark> <mark>uv</mark> <mark>FastAPI</mark> <mark>Pydantic</mark> <mark>sqlalchemy</mark>
       - layout: left
         title: Databases
         description: | # this will include new lines to allow paragraphs
@@ -81,11 +75,11 @@ content:
       - layout: left
         title: General Data Analysis
         description: | # this will include new lines to allow paragraphs
-          <mark>SQL</mark> <mark>pandas</mark> </mark>MS Excel ~  Google Sheets</mark> <mark>pivot tables</mark> <mark>array formulas</mark>
+          <mark>SQL</mark> <mark>pandas</mark> <mark>Google Sheets</mark> <mark>pivot tables</mark> <mark>array formulas</mark>
       - layout: left
         title: Tinkering
         description: | # this will include new lines to allow paragraphs
-          <mark>Fixing LLM-generated slop</mark>
+          <mark>Fixing LLM-generated slop</mark> <mark>Linux</mark> <mark>Hyprland</mark>
       - layout: left
         title: Business Analysis
         description: | # this will include new lines to allow paragraphs
@@ -100,8 +94,6 @@ content:
         link_text: CompStak
         sub_title: Senior Technical Writer
         caption: July 2020 - Present
-        # quote: >
-        #   Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
             At CompStak I am working on setting up a consistent documentation process, as well as maintaining day-to-day documentation activities and assisting with knowledge sharing.
       - layout: left
