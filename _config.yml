@@ -67,17 +67,29 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: System Architecture
+        description: | # this will include new lines to allow paragraphs
+          <mark>NATS</mark> <mark>Docker</mark> <mark>Redis</mark> <mark>Microservices</mark> <mark>CI/CD</mark>
+      - layout: left
         title: Python
         description: | # this will include new lines to allow paragraphs
-          scripting, <mark>uv</mark>, FastAPI, <mark>Pydantic</mark>, 
+          <mark>scripting</mark> <mark>uv</mark> <mark>FastAPI</mark> <mark>Pydantic</mark>
       - layout: left
-        title: Business Analysis
+        title: Databases
         description: | # this will include new lines to allow paragraphs
-          <mark>Project Management</mark>, Organizational Skills, <mark>Wireframing</mark>, Prototyping, <mark>Technical Documentation</mark>, Use Cases, <mark>User Stories</mark>, UML, <mark>BPMN</mark>, Benchmark Analysis, <mark>BABOK</mark>, Product Development, <mark>Business Process Optimization</mark>, Communication, <mark>Requirements analysis</mark>, Stakeholder engagement 
+          <mark>PostgreSQL</mark> <mark>MySQL</mark> <mark>SQLite</mark> <mark>MongoDB</mark> <mark>Redis</mark>
+      - layout: left
+        title: General Data Analysis
+        description: | # this will include new lines to allow paragraphs
+          <mark>SQL</mark> <mark>pandas</mark> </mark>MS Excel ~  Google Sheets</mark> <mark>pivot tables</mark> <mark>array formulas</mark>
       - layout: left
         title: Tinkering
         description: | # this will include new lines to allow paragraphs
           <mark>Fixing LLM-generated slop</mark>
+      - layout: left
+        title: Business Analysis
+        description: | # this will include new lines to allow paragraphs
+          <mark>Project Management</mark> <mark>Jira & Confluence</mark> <mark>Organizational Skills</mark> <mark>Wireframing</mark> <mark>Prototyping</mark> <mark>Technical Documentation</mark> <mark>Use Cases</mark> <mark>User Stories</mark> <mark>UML</mark> <mark>BPMN</mark> <mark>Benchmark Analysis</mark> <mark>BABOK</mark> <mark>Product Development</mark> <mark>Business Process Optimization</mark> <mark>Communication</mark> <mark>Requirements analysis</mark> <mark>Stakeholder engagement</mark> 
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
