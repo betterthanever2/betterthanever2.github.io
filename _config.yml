@@ -76,15 +76,57 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        title: CompStak
+        link: compstak.com
+        link_text: CompStak
+        sub_title: Senior Technical Writer
+        caption: July 2020 - Present
+        # quote: >
+        #   Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+            At CompStak I am working on setting up a consistent documentation process, as well as maintaining day-to-day documentation activities and assisting with knowledge sharing.
+      - layout: left
+        title: StageRoll
+        sub_title: Business analyst
+        caption: December 2020 - April 2021
+        description: | # this will include new lines to allow paragraphs
+            At StageRoll I was working on the discovery stage of a new product development \- preparation for PoC, MVP and further stages of the development pretty much simultaneously. This included diagrams of various kinds, written documentation and oral communication of knowledge to other members of the team
+      - layout: left
+        title: Giggster
+        sub_title: Data analysis & visualization specialist
+        caption: November 2020 - ...
+        description: | # this will include new lines to allow paragraphs
+            In my 2nd iteration with Giggster I’m working on the data accumulation and analysis project \- basically a custom ETL in its own right \- with a data visualization module (Python \+ Plotly \+ Dash) as its ultimate outlet.
+      - layout: left
+        title: Business Process Technology
+        sub_title: Business analyst
+        caption: June 2020 - January 2021
+        description: | # this will include new lines to allow paragraphs
+            At BPT I was working on several projects, including in-house products, but mostly on the crypto-currency exchange Exchanger.ee, which I led from conception and almost to release. My responsibilities included elaboration of user stories and business use cases, mockup creation, documentation maintenance, requirements clarification etc.
+      - layout: left
+        title: Giggster
+        sub_title: Business analyst
+        caption: March 2016 - November 2019
+        description: | # this will include new lines to allow paragraphs
+            With Giggster my responsibilities included monitoring of the market (benchmark analysis); research of various aspects of the business operation; integration of the 3rd-party data into the system; writing technical documentation, including user stories and use cases; composing diagrams in UML notation; creating mockups; conducting interviews/maintaining relationships with stakeholders of different levels; etc. 
+      - layout: left
+        title: Postindustria / Jobjet
+        sub_title: Business analyst
+        caption: March 2016 - November 2019
+        description: | # this will include new lines to allow paragraphs
+            In February of 2016 I started collaborating as a business analyst on several projects at Postindustria; mostly on *Jobjet* and *Giggster*, two flagship products of the company. Here I sourced and procured quality databases for enrichment of the operational DBs; hired freelancers for particular sub-projects and managed their activity; coordinated active communications between different stakeholders within the company, as well as external ones; wrote technical documentation; etc.
+      - layout: left
+        title: IQRIA
+        sub_title: Business analyst | Technical writer
+        caption: January 2015 - February 2016
+        description: | # this will include new lines to allow paragraphs
+            I was hired as a technical writer first, but soon enough the spectre of my responsibilities expanded to include mock-ups & wireframe design, communication with customers, as well as research of various aspects of business processes, and other stuff related to the product development activities.
+      - layout: left
+        title: Moscow Translations Center
+        sub_title: Head of Translation Office
+        caption: March 2011 - June 2014
+        description: | # this will include new lines to allow paragraphs
+            During my work at the Moscow Translation Center I managed one of the translations offices in the city of Korolyov, Moscow region. Besides making sure that my office is working properly at all times, my responsibilities included actually performing the translations, keeping close contact with notary public, maintaining communications with a wide circle of freelance translators, and regular financial reporting.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -99,7 +141,7 @@ content:
         #   During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
 
         #   I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
-      - layout: left
+      - layout: right
         title: Russian State University of Cinema in Moscow
         caption: 2006 - 2008
         # sub_title: Master's degree in International Relations
