@@ -30,14 +30,15 @@ linkedin_username: denis-shvetsov
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
 # gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
+gtag: "G-KEPGYKHP3W"
 # google_analytics: "UA-00000000-0"
 
 # About Section
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name is Denis and I love developing complex software systems. Big fan of event-driven architectures.
+  Hi, my name is Denis and I'm a big fan of event-driven architectures. I love to study them, and I love to build them.
+  
   I started small, as a technical writer, and taught myself everything one needs to build interconnected and pulsing network.
 
   I am most skilled in: <mark>NATS</mark>, <mark>Python</mark> and <mark>databases</mark>
@@ -54,7 +55,9 @@ content:
           This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
         description: | # this will include new lines to allow paragraphs
           Wapaganda is a coherent, multi-component system for analyzing media landscape around current Russo-Ukrainian war
+          
           I started it for personal reasons, but also as a way to learn various technologies.
+          
           The system is NATS-based, with over 10 different services working in concert to collect, process, and analyze data from multiple sources.
 
   - title: Skills # Title for the section
@@ -167,13 +170,8 @@ content:
     layout: text
     content: | # this will include new lines to allow paragraphs
       Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      - Modern Ukrainian poetry
+      - Logic puzzles
 
 # Footer
 footer_show_references: true
