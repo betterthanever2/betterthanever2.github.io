@@ -63,15 +63,15 @@ content:
       - layout: left
         title: System Architecture
         description: | # this will include new lines to allow paragraphs
-          <mark>NATS</mark> <mark>Docker</mark> <mark>Redis</mark> <mark>Microservices</mark> <mark>git</mark> <mark>Independent Hosting</mark>
+          <mark>NATS</mark> <mark>Docker</mark> <mark>Redis</mark> <mark>Microservices</mark> <mark>git</mark> <mark>Independent Hosting</mark> <mark>AsyncAPI</mark> <mark>Long-term thinking</mark>
       - layout: left
         title: Python
         description: | # this will include new lines to allow paragraphs
-          <mark>scripting</mark> <mark>uv</mark> <mark>FastAPI</mark> <mark>Pydantic</mark> <mark>sqlalchemy</mark>
+          <mark>scripting</mark> <mark>uv</mark> <mark>FastAPI</mark> <mark>Pydantic</mark> <mark>sqlalchemy</mark> <mark>sqlmodel</mark>
       - layout: left
         title: Databases
         description: | # this will include new lines to allow paragraphs
-          <mark>PostgreSQL</mark> <mark>MySQL</mark> <mark>SQLite</mark> <mark>MongoDB</mark> <mark>Redis</mark>
+          <mark>PostgreSQL</mark> <mark>SQLite</mark> <mark>MongoDB</mark> <mark>Redis</mark>
       - layout: left
         title: General Data Analysis
         description: | # this will include new lines to allow paragraphs
