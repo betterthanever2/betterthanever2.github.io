@@ -28,18 +28,15 @@ linkedin_username: denis-shvetsov
 #   url: Link url (eg. https://google.com)
 
 # Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
 gtag: "G-KEPGYKHP3W"
-# google_analytics: "UA-00000000-0"
 
 # About Section
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name is Denis and I'm a big fan of event-driven architectures. I love to study them, and I love to build them.
+  Hi, my name is Denis and I'm a big fan of event-driven architectures. I love to study them, and I love to build complex systems.
   
-  I started small, as a technical writer, and taught myself everything one needs to build interconnected and pulsing network.
+  I started small, as a technical writer, and taught myself everything one needs to build interconnected networks pulsing with data flow.
 
   I am most skilled in: <mark>NATS</mark>, <mark>Python</mark> and <mark>databases</mark>
 
