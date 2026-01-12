@@ -1,0 +1,12 @@
+<div class="list-pane-container">
+    <div class="skills-grid">
+      {% for skill in include.content %}
+        <div class="skill-card set-{{ skill.set | slugify }}">
+          <span class="skill-title">{{ skill.title }}</span>
+          <div class="skill-description">
+            <strong>{{ skill.set }}</strong>: {{ skill.description }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>

@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Denis Shvetsov
-title: Senior Software Developer & Systems Architect
+title: Systems Architect
 email: denis.shvetsov.me@gmail.com
 website: https://betterthanever2.github.io/
 
@@ -34,56 +34,144 @@ gtag: "G-KEPGYKHP3W"
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name is Denis and I'm a big fan of event-driven architectures. I love to study them, and I love to build complex systems.
+  Hi, my name is Denis. Thank you for visiting my page.
   
-  I started small, as a technical writer, and taught myself everything one needs to build interconnected networks pulsing with data flow.
+  I am an asipring systems architect. "Aspiring" means that most of my experience was accumulated outside my direct work responsibilities: 
+  I built a complex system almost entirely on my own specifically as a means of ascending to the architect's level. See "Proof of skill" for details.
+  In addition to various technical skills, I developed mental flexibility and technical intuition that allow me to select best tools for any 
+  task regardless of my prior experience with them.
 
-  I am most skilled in: <mark>NATS</mark>, <mark>Python</mark> and <mark>databases</mark>
+  Despite huble beginnings as a technical writer, I taught myself everything one needs to build interconnected networks, including coding, 
+  infrastructure, telemetry, event-driven way of thinking, and so on.
+
+  I started advancing myself _before_ the LLM upheaval, so my skills are solid. I do use LLMs in my day-to-day, but I learned to do it with caution.
+
+  I am best at: <mark>NATS</mark>, <mark>Python</mark>, <mark>systemic thinking</mark>, <mark>databases</mark>
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Skills
+    layout: list-pane
     content:
-      - layout: top-middle
-        title: Wapaganda
-        link: github.com/subjective-agency/wapatools
-        link_text: Project source (access on request)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          Wapaganda is a coherent, multi-component system for analyzing media landscape around current Russo-Ukrainian war
-          
-          I started it for personal reasons, but also as a way to learn various technologies.
-          
-          The system is NATS-based, with over 10 different services working in concert to collect, process, and analyze data from multiple sources.
-
-  - title: Skills # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: System Architecture
-        description: | # this will include new lines to allow paragraphs
-          <mark>NATS</mark> <mark>Docker</mark> <mark>Redis</mark> <mark>Microservices</mark> <mark>git</mark> <mark>Independent Hosting</mark> <mark>AsyncAPI</mark> <mark>Long-term thinking</mark>
-      - layout: left
-        title: Python
-        description: | # this will include new lines to allow paragraphs
-          <mark>scripting</mark> <mark>uv</mark> <mark>FastAPI</mark> <mark>Pydantic</mark> <mark>sqlalchemy</mark> <mark>sqlmodel</mark>
-      - layout: left
-        title: Databases
-        description: | # this will include new lines to allow paragraphs
-          <mark>PostgreSQL</mark> <mark>SQLite</mark> <mark>MongoDB</mark> <mark>Redis</mark>
-      - layout: left
-        title: General Data Analysis
-        description: | # this will include new lines to allow paragraphs
-          <mark>SQL</mark> <mark>pandas</mark> <mark>Google Sheets</mark> <mark>pivot tables</mark> <mark>array formulas</mark>
-      - layout: left
-        title: Tinkering
-        description: | # this will include new lines to allow paragraphs
-          <mark>Fixing LLM-generated slop</mark> <mark>Linux</mark> <mark>Hyprland</mark>
-      - layout: left
-        title: Business Analysis
-        description: | # this will include new lines to allow paragraphs
-          <mark>Project Management</mark> <mark>Jira & Confluence</mark> <mark>Organizational Skills</mark> <mark>Wireframing</mark> <mark>Prototyping</mark> <mark>Technical Documentation</mark> <mark>Use Cases</mark> <mark>User Stories</mark> <mark>UML</mark> <mark>BPMN</mark> <mark>Benchmark Analysis</mark> <mark>BABOK</mark> <mark>Product Development</mark> <mark>Business Process Optimization</mark> <mark>Communication</mark> <mark>Requirements analysis</mark> <mark>Stakeholder engagement</mark> 
+      - title: OpenTelemetry
+        set: System Architecture
+        description: OTel is used for cross-service observability and tracing. I use it because I want to have complete visibility into my systems.
+      - title: NATS
+        set: System Architecture
+        description: NATS is an framework for building event-driven architectures. It' one of my primary tools.
+      - title: Docker
+        set: System Architecture
+        description: 
+      - title: Kubernetes
+        set: System Architecture
+        description: 
+      - title: Redis
+        set: System Architecture
+        description: 
+      - title: Microservices
+        set: System Architecture
+        description: 
+      - title: Independent Hosting
+        set: System Architecture
+        description: 
+      - title: AsyncAPI
+        set: System Architecture
+        description: 
+      - title: AWS
+        set: System Architecture
+        description: 
+      - title: git
+        set: System Architecture
+        description: 
+      - title: Long-term thinking
+        set: System Architecture
+        description: 
+      - title: scripting
+        set: Python
+        description: 
+      - title: uv
+        set: Python
+        description: 
+      - title: FastAPI
+        set: Python
+        description: 
+      - title: Pydantic
+        set: Python
+        description: 
+      - title: sqlalchemy
+        set: Python
+        description: 
+      - title: sqlmodel
+        set: Python
+        description: 
+      - title: PostgreSQL
+        set: Databases
+        description: 
+      - title: SQLite
+        set: Databases
+        description: 
+      - title: MongoDB
+        set: Databases
+        description: 
+      - title: sql
+        set: Data Analysis
+        description: 
+      - title: pandas
+        set: Data Analysis
+        description: 
+      - title: Google Sheets
+        set: Data Analysis
+        description: 
+      - title: pivot tables
+        set: Data Analysis
+        description: 
+      - title: array formulas
+        set: Data Analysis
+        description: 
+      - title: Fixing LLM-generated slop
+        set: Tinkering
+        description: 
+      - title: Linux
+        set: Tinkering
+        description: 
+      - title: Hyprland
+        set: Tinkering
+        description: 
+      - title: Project Management
+        set: Business Analysis
+        description: 
+      - title: Jira & Confluence
+        set: Business Analysis
+        description: 
+      - title: Organizational Skills
+        set: Business Analysis
+        description: 
+      - title: Wireframing
+        set: Business Analysis
+        description: 
+      - title: Prototyping
+        set: Business Analysis
+        description: 
+      - title: Technical Documentation
+        set: Business Analysis
+        description: 
+      - title: Use Cases & User Stories
+        set: 
+        description: 
+      - title: UML & BPMN
+        set: Business Analysis
+        description: 
+      - title: BABOK
+        set: Business Analysis
+        description: 
+      - title: Business Process Optimization
+        set: Business Analysis
+        description: 
+      - title: Requirements analysis
+        set: Business Analysis
+        description: 
+      - title: Stakeholder engagement
+        set: Business Analysis
+        description: 
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
@@ -139,6 +227,20 @@ content:
         description: | # this will include new lines to allow paragraphs
             During my work at the Moscow Translation Center I managed one of the translations offices in the city of Korolyov, Moscow region. Besides making sure that my office is working properly at all times, my responsibilities included actually performing the translations, keeping close contact with notary public, maintaining communications with a wide circle of freelance translators, and regular financial reporting.
 
+  - title: Proof of Skill
+    layout: text
+    content: |
+      I build 1 project titled "Wapaganda". Its purpose is to collect, clean, and analyze data around a _certain geographical slice_* of the media landscape.
+
+      As of January 2026 the implementation consists of 12 applications (including dedicated orchestrator and data hub) that co-exist in the NATS-based system, 
+      with 9+ distinct cross-service flows among them. Technologies employed include website crawling (with and without LLMs), machine learning experiments 
+      (MLflow), OTel, HTTP endpoints with FastAPI, Telegram bots, various API integrations, as well as LLM-based determination of relevance (CrewAI).
+
+      The code is located [here](https://github.com/subjective-agency/wapatools), but you would need an explicit invitation to see it. Apologies for this
+      extra step, but it's necessary for now*.
+      
+      *Details on request
+
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -163,12 +265,13 @@ content:
 
         #   I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
 
-  - title: A Little More About Me
+  - title: Broader Context
     layout: text
     content: | # this will include new lines to allow paragraphs
       Alongside my interests in networks and software engineering some of my other interests and hobbies are:
       - Modern Ukrainian poetry
       - Logic puzzles
+      - Heavy metal music
 
 # Footer
 footer_show_references: true

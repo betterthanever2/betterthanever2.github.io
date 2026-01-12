@@ -3,3 +3,37 @@
 ---
 
 @import 'modern-resume-theme';
+
+/* Custom list-pane layout styles */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-card {
+  position: relative;
+  padding: 5px 12px;
+  background: #eee;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #222;
+  cursor: pointer;
+}
+
+.skill-description {
+  display: none;
+  position: absolute;
+  background: #222;
+  color: #fff;
+  padding: 8px;
+  width: 200px;
+  z-index: 100;
+  border-radius: 4px;
+  top: 100%;
+  left: 0;
+}
+
+.skill-card:hover .skill-description {
+  display: block;
+}
