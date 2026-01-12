@@ -36,15 +36,12 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name is Denis. Thank you for visiting my page.
   
-  I am an asipring systems architect. "Aspiring" means that most of my experience was accumulated outside my direct work responsibilities: 
+  I am an aspiring systems architect. "Aspiring" means that most of my experience was accumulated outside my direct work responsibilities: 
   I built a complex system almost entirely on my own specifically as a means of ascending to the architect's level. See "Proof of skill" for details.
   In addition to various technical skills, I developed mental flexibility and technical intuition that allow me to select best tools for any 
-  task regardless of my prior experience with them.
+  task regardless of prior experience.
 
-  Despite huble beginnings as a technical writer, I taught myself everything one needs to build interconnected networks, including **coding**, 
-  **infrastructure**, **telemetry**, **event-driven way of thinking**, and so on.
-
-  I started advancing myself **before** the LLM upheaval, so my skills are solid. I do use LLMs in my day-to-day, but I learned to do it with caution.
+  > I started advancing myself **before** the LLM upheaval, so my skills are solid. I do use LLMs in my day-to-day, but I learned to do it with caution.
 
   I am best at: <mark>NATS</mark>, <mark>Python</mark>, <mark>systemic thinking</mark>, <mark>databases</mark>
 
