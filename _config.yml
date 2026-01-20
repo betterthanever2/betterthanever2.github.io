@@ -49,126 +49,126 @@ content:
   - title: Skills
     layout: list-pane
     content:
+      - title: TOGAF
+        set: System Architecture
+        description: Industry standard for developing and maintaining enterprise architectures
       - title: OpenTelemetry
         set: System Architecture
-        description: OTel is used for cross-service observability and tracing. I use it because I want to have complete visibility into my systems.
+        description: Cross-service observability and tracing
       - title: NATS
         set: System Architecture
-        description: NATS is an framework for building event-driven architectures. It' one of my primary tools.
+        description: Framework for building event-driven architectures
       - title: Docker
         set: System Architecture
-        description: 
+        description: Conteinerization mechanism
       - title: Kubernetes
         set: System Architecture
-        description: 
+        description: Deployment system
       - title: Redis
         set: System Architecture
-        description: 
+        description: General-purpose key-value storage
       - title: Microservices
         set: System Architecture
-        description: 
+        description: Approach to building applications with restricted responsibilities
       - title: Independent Hosting
         set: System Architecture
-        description: 
-      - title: AsyncAPI
-        set: System Architecture
-        description: 
+        description: Because I would rather avoid giant corporations
       - title: AWS
         set: System Architecture
-        description: 
+        description: Because oftentimes giant corporations are unavoidable
+      - title: AsyncAPI
+        set: System Architecture
+        description: Spec for planning and describing async architectures
       - title: git
         set: System Architecture
-        description: 
+        description: Best version control
       - title: Long-term thinking
         set: System Architecture
-        description: 
+        description: Sadly, a rare quality these days
       - title: scripting
         set: Python
-        description: 
+        description: Almost any problem could be solved by writing a script
       - title: uv
         set: Python
-        description: 
+        description: It's really as fast as advertised
       - title: FastAPI
         set: Python
-        description: 
+        description: Superior Python framework for HTTP-based apps
       - title: Pydantic
         set: Python
-        description: 
+        description: Types, serialization, deserialization
       - title: sqlalchemy
         set: Python
-        description: 
+        description: A starship of database-related work
       - title: sqlmodel
         set: Python
-        description: 
+        description: Child of Pydantic & Sqlalchemy
       - title: PostgreSQL
         set: Databases
-        description: 
+        description: Best DB for most cases
       - title: SQLite
         set: Databases
-        description: 
+        description: Best DB for simple cases and local development
       - title: MongoDB
         set: Databases
-        description: 
+        description: Don't like it but sometimes it's necessary
       - title: sql
         set: Data Analysis
-        description: 
+        description: Super powerful query language
       - title: pandas
         set: Data Analysis
-        description: 
+        description: Data analysis
       - title: Google Sheets
         set: Data Analysis
-        description: 
-      - title: pivot tables
-        set: Data Analysis
-        description: 
+        description: Sometimes it's just good enough
       - title: array formulas
         set: Data Analysis
-        description: 
+        description: These could get pretty complex
       - title: Fixing LLM-generated slop
         set: Tinkering
-        description: 
+        description: LLMs aren't perfect... yet
       - title: Linux
         set: Tinkering
-        description: 
+        description: Because others are too restrictive
       - title: Hyprland
         set: Tinkering
-        description: 
+        description: Is convenient to work in
       - title: Project Management
         set: Business Analysis
-        description: 
+        description: Defining initiatives, breaking down into tasks, etc.
       - title: Jira & Confluence
         set: Business Analysis
-        description: 
+        description: I also have experience with other similar systems
       - title: Organizational Skills
         set: Business Analysis
-        description: 
+        description: Deep understanding of available resources and their allocation patterns
       - title: Wireframing
         set: Business Analysis
-        description: 
+        description: Very basic visualizations of solutions
       - title: Prototyping
         set: Business Analysis
-        description: 
+        description: Slightly more advanced visualizations of solutions
       - title: Technical Documentation
         set: Business Analysis
-        description: 
+        description: Committing things to paper. These days I'd rather delegate this to an LLM
       - title: Use Cases & User Stories
-        set: 
-        description: 
+        set: Business Analysis
+        description: ... and other specific formats common in the industry
       - title: UML & BPMN
         set: Business Analysis
-        description: 
+        description: Flows, sequences, charts, etc.
       - title: BABOK
         set: Business Analysis
-        description: 
+        description: Business analysis industry standard
       - title: Business Process Optimization
         set: Business Analysis
-        description: 
+        description: Re-aligning and simplifying value streams
       - title: Requirements analysis
         set: Business Analysis
-        description: 
+        description: Translation from common tongue to technical language
       - title: Stakeholder engagement
         set: Business Analysis
-        description: 
+        description: Successfully communicating with different kinds of people
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
