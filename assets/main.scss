@@ -19,21 +19,98 @@
   font-size: 1.1em;
   color: #222;
   cursor: pointer;
+  border-left: 4px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10; /* Elevate the entire card (and its tooltip) above siblings */
+}
+
+/* === Skill Set Color Scheme ===
+   Designed for both screen display and B&W print compatibility.
+   Colors are ordered by luminance (dark → light) for grayscale distinction.
+*/
+
+/* System Architecture - Deep Navy (darkest) */
+.skill-card.set-system-architecture {
+  background: #1e3a5f;
+  color: #ffffff;
+  border-left: 4px solid #0f1f33;
+}
+
+/* Python - Forest Green (dark) */
+.skill-card.set-python {
+  background: #065f46;
+  color: #ffffff;
+  border-left: 4px dashed #034732;
+}
+
+/* Data Analysis - Wine Red (medium-dark) */
+.skill-card.set-data-analysis {
+  background: #9f1239;
+  color: #ffffff;
+  border-left: 4px dotted #6b0f2a;
+}
+
+/* Databases - Warm Amber (medium) */
+.skill-card.set-databases {
+  background: #b45309;
+  color: #ffffff;
+  border-left: 4px solid #7c3a06;
+}
+
+/* Tinkering - Warm Stone (medium-light) */
+.skill-card.set-tinkering {
+  background: #57534e;
+  color: #ffffff;
+  border-left: 4px solid #3d3a36;
+}
+
+/* Business Analysis - Soft Indigo (lightest) */
+.skill-card.set-business-analysis {
+  background: #c7d2fe;
+  color: #1e1b4b;
+  border-left: 4px solid #818cf8;
 }
 
 .skill-description {
   display: none;
   position: absolute;
-  background: #222;
-  color: #fff;
-  padding: 8px;
-  width: 200px;
+  background: #1a1a2e;
+  color: #f0f0f0;
+  padding: 10px 12px;
+  width: 220px;
   z-index: 100;
-  border-radius: 4px;
-  top: 100%;
+  border-radius: 6px;
+  top: calc(100% + 6px);
   left: 0;
+  font-size: 0.9em;
+  line-height: 1.4;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.skill-description strong {
+  color: #a5b4fc;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .skill-card:hover .skill-description {
   display: block;
+}
+
+/* === Print Styles for B&W compatibility === */
+@media print {
+  .skill-card {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    border-left-width: 6px !important; /* Thicker borders for print visibility */
+  }
+  
+  .skill-description {
+    display: none !important;
+  }
 }
