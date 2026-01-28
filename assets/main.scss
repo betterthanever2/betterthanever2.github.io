@@ -11,6 +11,21 @@
   gap: 10px;
 }
 
+/* Collapsible (SFEI) skills grid */
+.skills-grid--collapsed {
+  /* No overflow clipping: we hide cards via JS so hover tooltips can overflow freely. */
+}
+
+.skills-grid-controls {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.skills-grid-toggle.btn {
+  padding: 10px 24px;
+  border-radius: 24px;
+}
+
 .skill-card {
   position: relative;
   padding: 5px 12px;
@@ -26,7 +41,7 @@
 .skill-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 10; /* Elevate the entire card (and its tooltip) above siblings */
+  z-index: 50; /* Elevate above siblings + the list-pane toggle button */
 }
 
 /* === Skill Set Color Scheme ===
@@ -76,26 +91,163 @@
   border-left: 4px solid #818cf8;
 }
 
+/* === SFEI Skills: distinct palette from Tools (reusing the same 6 colors) === */
+/* Applied only to the Skills section, detected via presence of `label`/`level`. */
+.skills-grid--sfei {
+  .skill-card.set-strategy-and-planning {
+    background: #1e3a5f;
+    color: #ffffff;
+    border-left: 4px solid #0f1f33;
+  }
+
+  .skill-card.set-financial-and-value-management {
+    background: #065f46;
+    color: #ffffff;
+    border-left: 4px dashed #034732;
+  }
+
+  .skill-card.set-security-and-privacy {
+    background: #9f1239;
+    color: #ffffff;
+    border-left: 4px dotted #6b0f2a;
+  }
+
+  .skill-card.set-governance-risk-and-compliance {
+    background: #b45309;
+    color: #ffffff;
+    border-left: 4px solid #7c3a06;
+  }
+
+  .skill-card.set-advice-and-guidance {
+    background: #57534e;
+    color: #ffffff;
+    border-left: 4px solid #3d3a36;
+  }
+
+  .skill-card.set-change-implementation {
+    background: #c7d2fe;
+    color: #1e1b4b;
+    border-left: 4px solid #818cf8;
+  }
+
+  /* Reuse the same palette for remaining sets to keep things visually grouped. */
+  .skill-card.set-change-analysis {
+    background: #1e3a5f;
+    color: #ffffff;
+    border-left: 4px solid #0f1f33;
+  }
+
+  .skill-card.set-change-planning {
+    background: #065f46;
+    color: #ffffff;
+    border-left: 4px dashed #034732;
+  }
+
+  .skill-card.set-systems-development {
+    background: #9f1239;
+    color: #ffffff;
+    border-left: 4px dotted #6b0f2a;
+  }
+
+  .skill-card.set-data-and-analytics {
+    background: #b45309;
+    color: #ffffff;
+    border-left: 4px solid #7c3a06;
+  }
+
+  .skill-card.set-user-centred-design {
+    background: #57534e;
+    color: #ffffff;
+    border-left: 4px solid #3d3a36;
+  }
+
+  .skill-card.set-content-management {
+    background: #c7d2fe;
+    color: #1e1b4b;
+    border-left: 4px solid #818cf8;
+  }
+
+  .skill-card.set-technology-management {
+    background: #1e3a5f;
+    color: #ffffff;
+    border-left: 4px solid #0f1f33;
+  }
+
+  .skill-card.set-service-management {
+    background: #065f46;
+    color: #ffffff;
+    border-left: 4px dashed #034732;
+  }
+
+  .skill-card.set-security-services {
+    background: #9f1239;
+    color: #ffffff;
+    border-left: 4px dotted #6b0f2a;
+  }
+
+  .skill-card.set-data-and-records-operations {
+    background: #b45309;
+    color: #ffffff;
+    border-left: 4px solid #7c3a06;
+  }
+
+  .skill-card.set-people-management {
+    background: #57534e;
+    color: #ffffff;
+    border-left: 4px solid #3d3a36;
+  }
+
+  .skill-card.set-skills-management {
+    background: #c7d2fe;
+    color: #1e1b4b;
+    border-left: 4px solid #818cf8;
+  }
+
+  .skill-card.set-stakeholder-management {
+    background: #1e3a5f;
+    color: #ffffff;
+    border-left: 4px solid #0f1f33;
+  }
+}
+
 .skill-description {
   display: none;
   position: absolute;
   background: #1a1a2e;
   color: #f0f0f0;
   padding: 10px 12px;
-  width: 220px;
-  z-index: 100;
+  width: 240px;
+  z-index: 1000;
   border-radius: 6px;
   top: calc(100% + 6px);
   left: 0;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1.4;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* When the list is collapsed, show tooltip above the card so it doesn't collide with the Show more button */
+.skills-grid--collapsed {
+  .skill-description {
+    top: auto;
+    bottom: calc(100% + 6px);
+  }
 }
 
 .skill-description strong {
   color: #a5b4fc;
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+}
+
+.skill-description .skill-meta {
+  font-size: 0.85em;
+  color: #cbd5e1;
+  margin-top: 2px;
+}
+
+.skill-description .skill-text {
+  margin-top: 8px;
 }
 
 .skill-card:hover .skill-description {

@@ -1,12 +1,34 @@
 <div class="list-pane-container">
-    <div class="skills-grid">
+    {% assign is_sfei_skills = false %}
+    {% if include.content.first.label %}
+      {% assign is_sfei_skills = true %}
+    {% endif %}
+    {% if include.content.first.level %}
+      {% assign is_sfei_skills = true %}
+    {% endif %}
+
+    <div class="skills-grid skills-grid--collapsible skills-grid--collapsed{% if is_sfei_skills %} skills-grid--sfei{% endif %}" data-collapsed-rows="3">
       {% for skill in include.content %}
         <div class="skill-card set-{{ skill.set | slugify }}">
           <span class="skill-title">{{ skill.title }}</span>
           <div class="skill-description">
-            <strong>{{ skill.set }}</strong>: {{ skill.description }}
+            <strong>{{ skill.set }}</strong>
+
+            {% if skill.label %}
+              <div class="skill-meta">Code: {{ skill.label }}</div>
+            {% endif %}
+
+            {% if skill.level %}
+              <div class="skill-meta">Level: {{ skill.level }}</div>
+            {% endif %}
+
+            <div class="skill-text">{{ skill.description }}</div>
           </div>
         </div>
       {% endfor %}
+    </div>
+
+    <div class="skills-grid-controls" hidden>
+      <button type="button" class="btn skills-grid-toggle" aria-expanded="false">Show more</button>
     </div>
   </div>
