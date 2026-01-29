@@ -53,7 +53,7 @@ about_content: | # this will include new lines to allow paragraphs
 content:
   - title: Skills
     layout: list-pane
-    description: These are high-level competencies. Complete list of my skills in YAML format is available [here](https://github.com/betterthanever2/betterthanever2.github.io/blob/main/.a/_skills.yml).
+    description: These are high-level competencies. Complete list of my skills in YAML format is available [here](https://github.com/betterthanever2/betterthanever2.github.io/blob/main/.a/my_skills.md).
     content:
       - title: Enterprise & Solution Architecture
         set: Strategic Architecture & Design
