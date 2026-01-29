@@ -1,0 +1,499 @@
+content:
+  - title: Skills
+    layout: list-pane
+    content:
+      - title: Strategic planning
+        set: Strategy and planning
+        description: Creating and maintaining organisational-level strategies to align overall business plans, actions and resources with high-level business objectives.
+        label: ITSP
+        level: 4
+      - title: Information management 
+        set: Strategy and planning
+        description: Enabling the effective management and use of information assets.
+        label: IRMG
+        level: 6
+      - title: Enterprise and business architecture 
+        set: Strategy and planning
+        description: Aligning an organisation's technology strategy with its business mission, strategy and processes and documenting this using architectural models.
+        label: STPL
+        level: 5
+      - title: Solution architecture 
+        set: Strategy and planning
+        description: Developing and communicating a multi-dimensional solution architecture to deliver agreed business outcomes.
+        label: ARCH
+        level: 6
+      - title: Innovation management 
+        set: Strategy and planning
+        description: Identifying, prioritising, incubating and exploiting opportunities provided by information, communication and digital technologies.
+        label: INOV
+        level: 5
+      - title: Emerging technology monitoring 
+        set: Strategy and planning
+        description: Identifying and assessing new and emerging technologies, products, services, methods and techniques.
+        label: EMRG
+        level: 5
+      - title: Formal research
+        set: Strategy and planning
+        description: Systematically creating new knowledge by data gathering, innovation, experimentation, evaluation and dissemination.
+        label: RSCH
+        level: 4
+      - title: Measurement 
+        set: Financial and value management
+        description: Developing and operating a measurement capability to support agreed organisational information needs.
+        label: MEAS
+        level: 3
+      - title: Information security 
+        set: Security and privacy
+        description: Defining and operating a framework of security controls and security management strategies.
+        label: SCTY
+        level: 3
+      - title: Information and data compliance 
+        set: Security and privacy
+        description: Implementing and promoting compliance with information and data management legislation.
+        label: PEDP
+        level: 4
+      - title: Risk management 
+        set: Governance, risk and compliance
+        description: Planning and implementing processes for managing risk across the enterprise, aligned with organisational strategy and governance frameworks.
+        label: BURM
+        level: 3
+      - title: Audit 
+        set: Governance, risk and compliance
+        description: Delivering independent, risk-based assessments of the effectiveness of processes, the controls and the compliance environment of an organisation.
+        label: AUDT
+        level: 3
+      - title: Quality management 
+        set: Governance, risk and compliance
+        description: Defining and operating a management framework of processes and working practices to deliver the organisation's quality objectives.
+        label: QUMG
+        level: 3
+      - title: Quality assurance 
+        set: Governance, risk and compliance
+        description: Assuring, through ongoing and periodic assessments and reviews, that the organisation's quality objectives are being met.
+        label: QUAS
+        level: 4
+      - title: Consultancy 
+        set: Advice and guidance
+        description: Providing advice and recommendations, based on expertise and experience, to address client needs.
+        label: CNSL
+        level: 5
+      - title: Specialist advice 
+        set: Advice and guidance
+        description: Providing authoritative, professional advice and direction in a specialist area.
+        label: TECH
+        level: 4
+      - title: Methods and tools 
+        set: Advice and guidance
+        description: Leads the adoption, management and optimisation of methods and tools, ensuring effective use and alignment with organisational objectives.
+        label: METL
+        level: 5
+      - title: Programme management 
+        set: Change implementation
+        description: Identifying, planning and coordinating a set of related projects and activities in support of specific business strategies and objectives.
+        label: PGMG
+        level: 6
+      - title: Project management 
+        set: Change implementation
+        description: Delivering agreed project outcomes by aligning appropriate management techniques, collaboration, leadership and governance to specific project and organisational contexts.
+        label: PRMG
+        level: 5
+      - title: Portfolio, programme and project support 
+        set: Change implementation
+        description: Providing support and guidance on portfolio, programme and project management processes, procedures, tools and techniques.
+        label: PROF
+        level: 4
+      - title: Delivery management 
+        set: Change implementation
+        description: Ensuring successful delivery of new or updated products and services through effective leadership and collaboration within defined delivery cycles.
+        label: DEMG
+        level: 6
+      - title: Business situation analysis 
+        set: Change analysis
+        description: Investigating business situations to define recommendations for improvement action.
+        label: BUSA
+        level: 4
+      - title: Feasibility assessment 
+        set: Change analysis
+        description: Defining, evaluating and describing business change options for financial, technical and business feasibility and strategic alignment.
+        label: FEAS
+        level: 3
+      - title: Requirements definition and management 
+        set: Change analysis
+        description: Managing requirements through the entire delivery and operational lifecycle.
+        label: REQM
+        level: 6
+      - title: Business modelling 
+        set: Change analysis 
+        description: Creating abstract or distilled models of business scenarios, representing processes, data and roles to support decision-making and analysis.
+        label: BSMO
+        level: 5
+      - title: Business process improvement 
+        set: Change planning
+        description: Creating new and potentially disruptive approaches to performing business activities.
+        label: BPRE
+        level: 3
+      - title: Organisational capability development 
+        set: Change planning
+        description: Providing leadership, advice and implementation support to assess organisational capabilities and to identify, prioritise and implement improvements.
+        label: OCDV
+        level: 5
+      - title: Organisation design and implementation
+        set: Change planning
+        description: Planning, designing and implementing an integrated organisation structure and culture.
+        label: ORDI
+        level: 4
+      - title: Organisational change management 
+        set: Change planning
+        description: Planning, designing and implementing activities to transition the organisation and people to the required future state.
+        label: CIPM
+        level: 4
+      - title: Organisational change enablement 
+        set: Change planning
+        description: Facilitates cultural and behavioural change by enabling individuals and teams to embed new ways of working and adapt to changes.
+        label: OCEN
+        level: 4
+      - title: Product management 
+        set: Systems development
+        description: Managing and developing products or services throughout their full lifecycle, from inception through growth, maturity, and decline, to retirement.
+        label: PROD
+        level: 5
+      - title: Systems development management 
+        set: Systems development
+        description: Planning, estimating and executing systems development work to time, budget and quality targets.
+        label: DLMG
+        level: 5
+      - title: Systems and software lifecycle engineering 
+        set: Systems development
+        description: Establishing and deploying an environment for developing, continually improving and securely operating software and systems products and services.
+        label: SLEN
+        level: 5
+      - title: Systems design 
+        set: Systems development
+        description: Designing systems to meet specified requirements and agreed systems architectures.
+        label: DESN
+        level: 6
+      - title: Software design 
+        set: Systems development
+        description: Architecting and designing software to meet specified requirements, ensuring adherence to established standards and principles.
+        label: SWDN
+        level: 6
+      - title: Network design 
+        set: Systems development
+        description: Designing communication networks to meet business requirements, ensuring scalability, reliability, security and alignment with strategic objectives.
+        label: NTDS
+        level: 3
+      - title: Infrastructure design 
+        set: Systems development
+        description: Designing technology infrastructure to meet business requirements, ensuring scalability, reliability, security and alignment with strategic objectives.
+        label: IFDN
+        level: 5
+      - title: Programming/software development 
+        set: Systems development
+        description: Developing software components to deliver value to stakeholders.
+        label: PROG
+        level: 6
+      - title: Systems integration and build 
+        set: Systems development
+        description: Planning, implementing and controlling activities to integrate system elements, subsystems and interfaces to create operational systems, products or services.
+        label: SINT
+        level: 5
+      - title: Functional testing 
+        set: Systems development
+        description: Assessing specified or unspecified functional requirements and characteristics of products, systems and services through investigation and testing.
+        label: TEST
+        level: 4
+      - title: Non-functional testing 
+        set: Systems development
+        description: Assessing systems and services to evaluate performance, security, scalability and other non-functional qualities against requirements or expected standards.
+        label: NFTS
+        level: 3
+      - title: Process testing 
+        set: Systems development
+        description: Assessing documented and undocumented process flows within a product, system or service against business needs through investigation and testing.
+        label: PRTS
+        level: 4
+      - title: Software configuration 
+        set: Systems development
+        description: Designing and deploying software product configurations into software environments or platforms.
+        label: PORT
+        level: 4
+      - title: Data management 
+        set: Data and analytics
+        description: Developing and implementing plans, policies and practices that control, protect and optimise the value and governance of data assets.
+        label: DATM
+        level: 4
+      - title: Data modelling and design 
+        set: Data and analytics
+        description: Developing models and diagrams to represent, communicate and manage data requirements and data assets.
+        label: DTAN
+        level: 5
+      - title: Database design 
+        set: Data and analytics
+        description: Specifying, designing and maintaining mechanisms for storing and accessing data across various environments and platforms.
+        label: DBDS
+        level: 4
+      - title: Data analytics 
+        set: Data and analytics
+        description: Enabling data-driven decision making by extracting, analysing and communicating insights from structured and unstructured data.
+        label: DAAN
+        level: 5
+      - title: Data science 
+        set: Data and analytics
+        description: Applying mathematics, statistics, data mining and predictive modelling techniques to gain insights, predict behaviours and generate value from data.
+        label: DATS
+        level: 2
+      - title: Machine learning 
+        set: Data and analytics
+        description: Developing systems that learn from data and experience, improving performance, accuracy and adaptability in dynamic environments.
+        label: MLNG
+        level: 2
+      - title: Business intelligence 
+        set: Data and analytics
+        description: Developing, producing and delivering regular and one-off management information to provide insights and aid decision-making.
+        label: BINT
+        level: 4
+      - title: Data engineering 
+        set: Data and analytics
+        description: Designing, building, operationalising, securing and monitoring data pipelines, stores and real-time processing systems for scalable and reliable data management.
+        label: DENG
+        level: 5
+      - title: Data visualisation 
+        set: Data and analytics
+        description: Facilitating understanding of data by displaying concepts, ideas and facts using graphical representations.
+        label: VISL
+        level: 5
+      - title: User research 
+        set: User centred design
+        description: Identifying users' behaviours, needs and motivations using observational research methods.
+        label: URCH
+        level: 2
+      - title: Customer experience 
+        set: User centred design
+        description: Ensuring the delivery of high-quality interactions and experiences that meet customer expectations across all touchpoints and channels.
+        label: CEXP
+        level: 4
+      - title: Accessibility and inclusion 
+        set: User centred design
+        description: Driving accessibility and inclusion in services and products.
+        label: ACIN
+        level: 2
+      - title: User experience analysis 
+        set: User centred design
+        description: Understanding the context of use for systems, products and services and specifying user experience requirements and design goals.
+        label: UNAN
+        level: 4
+      - title: User experience design 
+        set: User centred design
+        description: Producing design concepts and prototypes for user interactions and experiences of a product, system or service.
+        label: HCEV
+        level: 5
+      - title: User experience evaluation 
+        set: User centred design
+        description: Validating systems, products or services against user experience goals, metrics and targets.
+        label: USEV
+        level: 4
+      - title: Content design and authoring 
+        set: Content management
+        description: Planning, designing and creating content that meets user-centred and organisational needs, encompassing textual information, graphical content and multimedia elements.
+        label: INCA
+        level: 6
+      - title: Content publishing 
+        set: Content management
+        description: Managing processes to collect, assemble and publish content across various channels to meet organisational and audience needs.
+        label: ICPM
+        level: 3
+      - title: Knowledge management 
+        set: Content management
+        description: Systematically capturing, developing and leveraging vital knowledge to create value and enhance organisational performance.
+        label: KNOW
+        level: 6
+      - title: Graphic design 
+        set: Content management
+        description: Creating and applying visual concepts to communicate ideas, enhance aesthetics and improve user experience across digital and print media.
+        label: GRDN
+        level: 4
+      - title: Technology service management 
+        set: Technology management
+        description: Managing the provision of technology-based services to meet defined organisational needs.
+        label: ITMG
+        level: 5
+      - title: Application support 
+        set: Technology management
+        description: Delivering management, technical and administrative services to support and maintain live applications.
+        label: ASUP
+        level: 5
+      - title: Infrastructure operations 
+        set: Technology management
+        description: Provisioning, deploying, configuring, operating and optimising technology infrastructure across physical, virtual and cloud-based environments.
+        label: ITOP
+        level: 3
+      - title: System software administration 
+        set: Technology management
+        description: Installing, managing and maintaining operating systems, data management, office automation and utility software across various infrastructure environments.
+        label: SYSP
+        level: 4
+      - title: Network support 
+        set: Technology management
+        description: Providing maintenance and support services for communications networks.
+        label: NTAS
+        level: 4
+      - title: Systems installation and removal 
+        set: Technology management
+        description: Installing and testing, or decommissioning and removing, systems or system components.
+        label: HSIN
+        level: 4
+      - title: Configuration management 
+        set: Technology management
+        description: Planning, identifying, controlling, accounting for and auditing of configuration items (CIs) and their interrelationships.
+        label: CFMG
+        level: 4
+      - title: Release management 
+        set: Technology management
+        description: Managing the release of new and updated services into production, ensuring alignment with business objectives and compliance standards.
+        label: RELM
+        level: 5
+      - title: Deployment 
+        set: Technology management
+        description: Transitioning software from development to live usage, managing risks and ensuring it works as intended.
+        label: DEPL
+        level: 5
+      - title: Storage management 
+        set: Technology management
+        description: Provisioning, configuring and optimising on-premises and cloud-based storage solutions, ensuring data availability, security and alignment with business objectives.
+        label: STMG
+        level: 4
+      - title: Service level management 
+        set: Service management
+        description: Agreeing targets for service levels and assessing, monitoring and managing the delivery of services against the targets.
+        label: SLMO
+        level: 4
+      - title: Service catalogue management 
+        set: Service management
+        description: Providing a source of consistent information about available services and products to customers and users.
+        label: SCMG
+        level: 5
+      - title: Capacity management 
+        set: Service management
+        description: Ensuring service components have the capacity and performance to meet current and planned business needs.
+        label: CPMG
+        level: 3
+      - title: Incident management 
+        set: Service management
+        description: Coordinating responses to a diverse range of incidents to minimise negative impacts and quickly restore services.
+        label: USUP
+        level: 4
+      - title: Problem management 
+        set: Service management
+        description: Managing the lifecycle of all problems that have occurred or could occur in delivering a service.
+        label: PBMG
+        level: 5
+      - title: Change control 
+        set: Service management
+        description: Assessing risks associated with proposed changes and ensuring changes to products, services or systems are controlled and coordinated.
+        label: CHMG
+        level: 3
+      - title: Asset management 
+        set: Service management
+        description: Managing the full lifecycle of assets from acquisition, operation, maintenance to disposal.
+        label: ASMG
+        level: 5
+      - title: Service acceptance 
+        set: Service management
+        description: Managing the process to obtain formal confirmation that service acceptance criteria have been met.
+        label: SEAC
+        level: 4
+      - title: Identity and access management 
+        set: Security services
+        description: Manages identity verification and access permissions within organisational systems and environments.
+        label: IAMT
+        level: 4
+      - title: Security operations 
+        set: Security services
+        description: Manages and administers security measures, using tools and intelligence to protect assets, ensuring compliance and operational integrity.
+        label: SCAD
+        level: 2
+      - title: Records management 
+        set: Data and records operations
+        description: Planning, implementing and managing the full lifecycle of organisational records.
+        label: RMGT
+        level: 2
+      - title: Analytical classification and coding 
+        set: Data and records operations
+        description: Interpreting information and assigning classifications or labels based on domain-specific knowledge, standards and guidelines to enable data analysis and use.
+        label: ANCC
+        level: 3
+      - title: Database administration 
+        set: Data and records operations
+        description: Installing, configuring, monitoring, maintaining databases and data stores, ensuring performance and security and adapting to evolving technologies.
+        label: DBAD
+        level: 5
+      - title: Performance management 
+        set: People management
+        description: Improving organisational performance by developing the performance of individuals and workgroups to meet agreed objectives with measurable results.
+        label: PEMT
+        level: 4
+      - title: Employee experience 
+        set: People management
+        description: Enhancing employee engagement and ways of working, empowering employees and supporting their health and wellbeing.
+        label: EEXP
+        level: 5
+      - title: Organisational facilitation 
+        set: People management
+        description: Supporting workgroups to implement principles and practices for effective teamwork across organisational boundaries and professional specialisms.
+        label: OFCL
+        level: 4
+      - title: Professional development 
+        set: People management
+        description: Facilitating the professional development of individuals in line with their career goals and organisational requirements.
+        label: PDSV
+        level: 4
+      - title: Workforce planning 
+        set: People management
+        description: Strategically projecting the demand for people and skills and proactively planning the workforce supply to meet organisational needs.
+        label: WFPL
+        level: 4
+      - title: Resourcing 
+        set: People management
+        description: Acquiring, deploying and onboarding resources.
+        label: RESC
+        level: 2
+      - title: Learning and development management 
+        set: Skills management
+        description: Delivering management, advisory and administrative services to support the development of knowledge, skills and competencies.
+        label: ETMG
+        level: 2
+      - title: Learning design and development 
+        set: Skills management
+        description: Designing and developing resources to transfer knowledge, develop skills and change behaviours.
+        label: TMCR
+        level: 3
+      - title: Learning delivery 
+        set: Skills management
+        description: Transferring knowledge, developing skills and changing behaviours using a range of techniques, resources and media.
+        label: ETDL
+        level: 3
+      - title: Competency assessment 
+        set: Skills management
+        description: Assessing knowledge, skills, competency and behaviours by any means, whether formal or informal, against frameworks such as SFIA.
+        label: LEDA
+        level: 2
+      - title: Sourcing 
+        set: Stakeholder management
+        description: Managing, or providing advice on, the procurement or commissioning of products and services.
+        label: SORC
+        level: 2
+      - title: Supplier management 
+        set: Stakeholder management
+        description: Aligning the organisation's supplier performance objectives and activities with sourcing strategies and plans, balancing costs, efficiencies and service quality.
+        label: SUPP
+        level: 2
+      - title: Stakeholder relationship management 
+        set: Stakeholder management
+        description: Systematically analysing, managing and influencing stakeholder relationships to achieve mutually beneficial outcomes through structured engagement.
+        label: RLMT
+        level: 4
+      - title: Business administration 
+        set: Stakeholder management
+        description: Managing and performing administrative services and tasks to enable individuals, teams and organisations to succeed in their objectives.
+        label: ADMN
+        level: 3
