@@ -34,28 +34,52 @@ gtag: "G-KEPGYKHP3W"
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name is Denis. Thank you for visiting my page.
+  Hi, my name is Denis.
   
-  I am an aspiring systems architect. "Aspiring" means that most of my experience was accumulated outside my direct work responsibilities: 
-  I built a complex system almost entirely on my own specifically as a means of ascending to the architect's level. See "Proof of skill" for details.
-  In addition to various technical skills, I developed mental flexibility and technical intuition that allow me to select best tools for any 
-  task regardless of prior experience.
+  I am a Systems Architect driven by the "first-principles" approach to engineering. While I have a deep background in business analysis and technical writing, I have transitioned into architecture by doing what I do best: building complex, functional systems from the ground up.
 
-  > I started advancing myself **before** the LLM upheaval, so my skills are solid. I do use LLMs in my day-to-day, but I learned to do it with caution.
+  My technical intuition is rooted in the "pre-LLM" era, meaning my skills are built on a solid foundation of architectural fundamentals rather than prompt dependency. I leverage modern AI tools to accelerate my workflow, but I treat them with caution and scrutiny.
 
-  I am best at: <mark>NATS</mark>, <mark>Python</mark>, <mark>databases</mark>, <mark>systemic thinking</mark>
+  What I bring to a project:
+
+    - Architectural Ownership: I don't just design on paper, I build. My recent work involves orchestrating multi-service environments using NATS, Python, and a variety of data tools.
+
+    - Mental Flexibility: I am tool-agnostic. I select the best stack for the task, so it can be a lean, independently hosted Postgres-based implementation or a massive AWS-based microservices mesh.
+
+    - Efficiency-First Mindset: I thrive in environments that value technical excellence over corporate bureaucracy. I prefer building high-impact, "sovereign" systems that solve real-world problems without unnecessary overhead.
+
+  Core Stack: <mark>NATS</mark>, <mark>Python</mark> (FastAPI/SQLAlchemy), <mark>PostgreSQL</mark>, <mark>Docker</mark>, and <mark>Strategic System Design</mark>.
 
 content:
-  - title: Core competencies
+  - title: Skills
     layout: list-pane
+    description: These are high-level competencies. Complete list of my skills in YAML format is available [here](https://github.com/betterthanever2/betterthanever2.github.io/blob/main/.a/_skills.yml).
     content:
-      - title: blabla
-        set: blabla
-        description: blabla
-      - title: blabla
-        set: blabla
-        description: blabla
-  
+      - title: Enterprise & Solution Architecture
+        set: Strategic Architecture & Design
+        description: Expert-level (SFIA 6) capability in aligning technology strategy with business missions using TOGAF and architectural modeling.
+      - title: Systems Design
+        set: Strategic Architecture & Design
+        description: Designing high-availability, distributed systems with a focus on microservices, event-driven patterns (NATS), and systemic scalability.
+      - title: Requirements & Analysis
+        set: Strategic Architecture & Design
+        description: Leading the full lifecycle of requirements management, from business situation analysis to technical specification.
+      - title: Back-end Engineering
+        set: Systems Development & Engineering
+        description: Advanced Python development (FastAPI, SQLModel, Pydantic) with a focus on asynchronous programming and high-performance scripts.
+      - title: Data Architecture
+        set: Systems Development & Engineering
+        description: Designing and operationalizing complex data pipelines and relational schemas using PostgreSQL, SQLAlchemy, and Redis.
+      - title: Observability & Lifecycle
+        set: Systems Development & Engineering
+        description: Implementing OTel (OpenTelemetry) for cross-service tracing and managing software lifecycles from inception to deployment (Docker, K8s).
+      - title: Delivery Management
+        set: Leadership & Governance
+        description: Coordinating complex projects and programs, ensuring successful delivery within defined cycles and quality targets.
+      - title: Knowledge & Innovation Management
+        set: Leadership & Governance
+        description: Systematically capturing organizational knowledge and identifying emerging technologies to drive competitive advantage.
+
   - title: Tools
     layout: list-pane
     content:
@@ -204,17 +228,19 @@ content:
   - title: Proof of Skill
     layout: text
     content: |
-      I build 1 project titled "Wapaganda". Its purpose is to collect, clean, and analyze data around a _certain geographical slice_* of the media landscape.
+      I build a project, which purpose is to collect, clean, and analyze data around a certain geographical slice of the media landscape.
 
-      As of January 2026 the implementation consists of 12 applications (including dedicated orchestrator and data hub) that co-exist in the NATS-based system, 
-      with 9+ distinct cross-service flows among them. Technologies employed include website crawling (with and without LLMs), machine learning experiments 
-      (MLflow), OTel, HTTP endpoints with FastAPI, Telegram bots, various API integrations, as well as LLM-based determination of relevance (CrewAI).
+      As of beginning of 2026 the implementation consists of 12 applications (including dedicated orchestrator and data hub) that co-exist in the NATS-based system, with 9+ distinct cross-service flows among them. Technologies employed include website crawling (with and without LLMs), machine learning experiments (MLflow), OTel, HTTP endpoints with FastAPI, Telegram bots, various API integrations, as well as LLM-based determination of relevance (CrewAI).
 
-      The code is located [here](https://github.com/subjective-agency/wapatools), but you would need an explicit invitation to see it. Apologies for this
-      extra step, but it's necessary for now*.
+      If you wish to learn more, visit dedicated [documentation repository](https://github.com/subjective-agency/warch). Here you will find:
       
-      *Details on request
-
+      - AsyncAPI specifications for all applications
+      - AsyncAPI specifications and diagrams for the cross-application flows
+      - Plain-language description of applications and initiatives
+      - Detailed plans for various features, both implemented and planned; and more.
+      
+      The code for the project is located [here](https://github.com/subjective-agency/wapatools), and is currently closed to the public. Details and access are available on request.
+      
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:

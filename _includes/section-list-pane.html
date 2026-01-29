@@ -1,4 +1,8 @@
 <div class="list-pane-container">
+    {% if include.description %}
+      <div class="section-description">{{ include.description | markdownify }}</div>
+    {% endif %}
+
     {% assign is_sfei_skills = false %}
     {% if include.content.first.label %}
       {% assign is_sfei_skills = true %}

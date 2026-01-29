@@ -5,6 +5,28 @@
 @import 'modern-resume-theme';
 
 /* Custom list-pane layout styles */
+
+/* Section description - note style */
+.section-description {
+  margin: 0 0 30px 0;
+  padding: 10px 5px;
+  font-size: 0.7em;
+  text-align: center;
+  color: #f8f9fa;
+  line-height: 1em;
+  border-left: 3px solid #6c757d;
+  // border-bottom: 1px solid #6c757d;
+  border-radius: 0 4px 4px 0;
+}
+
+.section-description a {
+  color: #4a90a4;
+}
+
+.section-description p {
+  margin: 0;
+}
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -89,6 +111,25 @@
   background: #c7d2fe;
   color: #1e1b4b;
   border-left: 4px solid #818cf8;
+}
+
+/* === High-level competency skill sets (for Skills section) === */
+.skill-card.set-strategic-architecture-design {
+  background: #1e3a5f;
+  color: #ffffff;
+  border-left: 4px solid #0f1f33;
+}
+
+.skill-card.set-systems-development-engineering {
+  background: #065f46;
+  color: #ffffff;
+  border-left: 4px dashed #034732;
+}
+
+.skill-card.set-leadership-governance {
+  background: #9f1239;
+  color: #ffffff;
+  border-left: 4px dotted #6b0f2a;
 }
 
 /* === SFEI Skills: distinct palette from Tools (reusing the same 6 colors) === */
