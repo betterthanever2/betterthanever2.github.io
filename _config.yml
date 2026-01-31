@@ -9,6 +9,7 @@ version: 2
 name: Denis Shvetsov
 title: Systems Architect
 email: denis.shvetsov.me@gmail.com
+email: d@subjective.agency
 website: https://betterthanever2.github.io/
 
 # Dark Mode (true/false/never)
@@ -106,10 +107,10 @@ content:
         description: Approach to building applications with restricted responsibilities
       - title: Independent Hosting
         set: System Architecture
-        description: Because I would rather avoid giant corporations
+        description: A typical Linux server with Docker or K8s
       - title: AWS
         set: System Architecture
-        description: Because oftentimes giant corporations are unavoidable
+        description: Cloud provider with too vast of an array of services
       - title: AsyncAPI
         set: System Architecture
         description: Spec for planning and describing async architectures
@@ -237,9 +238,11 @@ content:
       - AsyncAPI specifications for all applications
       - AsyncAPI specifications and diagrams for the cross-application flows
       - Plain-language description of applications and initiatives
-      - Detailed plans for various features, both implemented and planned; and more.
+      - Elaborate intentions for various features, both implemented and planned; 
       
-      The code for the project is located [here](https://github.com/subjective-agency/wapatools), and is currently closed to the public. Details and access are available on request.
+      and more.
+      
+      The code for the project is located [here](https://github.com/subjective-agency/wapatools), and is currently closed to the public. Details and access would be provided on request.
       
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
