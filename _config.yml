@@ -182,7 +182,7 @@ content:
         sub_title: Senior Technical Writer
         caption: July 2020 - Present
         description: | # this will include new lines to allow paragraphs
-            At CompStak I am working on setting up a consistent documentation process, as well as maintaining day-to-day documentation activities and assisting with knowledge sharing.
+            At CompStak I am working on setting up a consistent documentation architecture across the company's technical portfolio. I maintain day-to-day documentation activities, assist with knowledge sharing, research new tools and approaches. I created release notes template and process, and participated in defining other flows and processes. I also author and maintain API documentation, internal technical docs, runbooks, and other materials.
       - layout: left
         title: StageRoll
         sub_title: Business analyst
@@ -224,7 +224,7 @@ content:
         sub_title: Head of Translation Office
         caption: March 2011 - June 2014
         description: | # this will include new lines to allow paragraphs
-            During my work at the Moscow Translation Center I managed one of the translations offices in the city of Korolyov, Moscow region. Besides making sure that my office is working properly at all times, my responsibilities included actually performing the translations, keeping close contact with notary public, maintaining communications with a wide circle of freelance translators, and regular financial reporting.
+            Responsibilities included performing translations, managing office and finances.
 
   - title: Proof of Skill
     layout: text
