@@ -27,6 +27,23 @@
   margin: 0;
 }
 
+/* PDF download button: swap icon on hover/focus (no custom colors) */
+#pdf-export-btn .download-icon {
+  display: none;
+}
+
+#pdf-export-btn:hover .pdf-icon,
+#pdf-export-btn:focus .pdf-icon,
+#pdf-export-btn:focus-visible .pdf-icon {
+  display: none;
+}
+
+#pdf-export-btn:hover .download-icon,
+#pdf-export-btn:focus .download-icon,
+#pdf-export-btn:focus-visible .download-icon {
+  display: inline-block;
+}
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;

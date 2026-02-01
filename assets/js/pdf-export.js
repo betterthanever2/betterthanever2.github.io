@@ -171,6 +171,14 @@
     return m ? m[1] : '';
   }
 
+  function skillCardsToCommaLine(container) {
+    if (!container) return '';
+    const cards = Array.from(container.querySelectorAll('.skill-card'));
+    const titles = cards.map((c) => safeText(c.querySelector('.skill-title'))).filter(Boolean);
+    if (titles.length === 0) return '';
+    return `<p>${titles.map(htmlEscape).join(', ')}</p>`;
+  }
+
   function skillCardsToList(container) {
     if (!container) return '';
     const cards = Array.from(container.querySelectorAll('.skill-card'));
@@ -199,13 +207,8 @@
 
   function buildSkillsSection(headerInfo) {
     const container = findSectionContainerByHeading('Skills');
-    const githubUser = inferGithubUsernameFromUrl(headerInfo.github);
-    const skillsUrl = githubUser
-      ? `https://github.com/${githubUser}/${githubUser}.github.io/blob/main/_skills.yml`
-      : '';
-
     const noteHtml = container?.querySelector('.section-description')?.innerHTML || '';
-    const listHtml = skillCardsToList(container);
+    const listHtml = skillCardsToCommaLine(container);
 
     return `
       <h2>Skills</h2>
@@ -220,7 +223,7 @@
 
     return `
       <h2>Tools</h2>
-      ${skillCardsToList(container)}
+      ${skillCardsToCommaLine(container)}
     `;
   }
 

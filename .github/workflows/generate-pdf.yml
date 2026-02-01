@@ -1,0 +1,71 @@
+name: Generate resume PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "_config.yml"
+      - "_includes/pdf-content.html"
+      - "_layouts/pdf.html"
+      - "pdf.html"
+      - "assets/pdf-export.css"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - ".github/workflows/generate-pdf.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build_pdf:
+    # Prevent infinite loop when we commit the generated PDF.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Install Chromium
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+
+      - name: Start local server
+        run: |
+          python3 -m http.server 4000 --directory _site >/tmp/http.log 2>&1 &
+          echo $! > /tmp/http.pid
+
+      - name: Generate PDF from /pdf.html
+        run: |
+          chromium-browser \
+            --headless \
+            --no-sandbox \
+            --disable-gpu \
+            --print-to-pdf="assets/Denis_Shvetsov_Systems_Architect_Resume.pdf" \
+            --print-to-pdf-no-header \
+            "http://127.0.0.1:4000/pdf.html"
+
+      - name: Stop local server
+        if: always()
+        run: |
+          if [ -f /tmp/http.pid ]; then kill "$(cat /tmp/http.pid)" || true; fi
+
+      - name: Commit generated PDF (if changed)
+        run: |
+          if git diff --quiet -- assets/Denis_Shvetsov_Systems_Architect_Resume.pdf; then
+            echo "PDF unchanged; nothing to commit."
+            exit 0
+          fi
+          git add assets/Denis_Shvetsov_Systems_Architect_Resume.pdf
+          git commit -m "chore(pdf): update generated resume PDF"
+          git push
+

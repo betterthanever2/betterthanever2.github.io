@@ -44,16 +44,6 @@
         <h2>{{ section.title }}</h2>
 
         {%- if section.title == "Skills" -%}
-          {%- if site.github_username -%}
-            {%- assign skills_url = "https://github.com/" | append: site.github_username | append: "/" | append: site.github_username | append: ".github.io/blob/main/_skills.yml" -%}
-            <p>
-              View detailed skills:
-              <a href="{{ skills_url }}">{{ skills_url }}</a>
-            </p>
-          {%- else -%}
-            <p>View detailed skills:</p>
-          {%- endif -%}
-
           {%- if section.description -%}
             <div class="pdf-section-note">
               {{ section.description | markdownify }}
@@ -61,21 +51,13 @@
           {%- endif -%}
 
           {%- if section.content and section.content.size > 0 -%}
-            <ul class="pdf-simple-list">
+            <p>
               {%- for item in section.content -%}
-                <li>
-                  {%- if item.title -%}
-                    <strong>{{ item.title }}</strong>
-                  {%- endif -%}
-                  {%- if item.set -%}
-                    ({{ item.set }})
-                  {%- endif -%}
-                  {%- if item.description -%}
-                    — {{ item.description }}
-                  {%- endif -%}
-                </li>
+                {%- if item.title -%}
+                  {{ item.title }}{%- unless forloop.last -%}, {% endunless -%}
+                {%- endif -%}
               {%- endfor -%}
-            </ul>
+            </p>
           {%- endif -%}
 
         {%- elsif section.layout == "list" -%}
@@ -123,21 +105,31 @@
             </div>
           {%- endif -%}
 
-          <ul class="pdf-simple-list">
-            {%- for item in section.content -%}
-              <li>
+          {%- if section.title == "Tools" and section.content and section.content.size > 0 -%}
+            <p>
+              {%- for item in section.content -%}
                 {%- if item.title -%}
-                  <strong>{{ item.title }}</strong>
+                  {{ item.title }}{%- unless forloop.last -%}, {% endunless -%}
                 {%- endif -%}
-                {%- if item.set -%}
-                  ({{ item.set }})
-                {%- endif -%}
-                {%- if item.description -%}
-                  — {{ item.description }}
-                {%- endif -%}
-              </li>
-            {%- endfor -%}
-          </ul>
+              {%- endfor -%}
+            </p>
+          {%- else -%}
+            <ul class="pdf-simple-list">
+              {%- for item in section.content -%}
+                <li>
+                  {%- if item.title -%}
+                    <strong>{{ item.title }}</strong>
+                  {%- endif -%}
+                  {%- if item.set -%}
+                    ({{ item.set }})
+                  {%- endif -%}
+                  {%- if item.description -%}
+                    — {{ item.description }}
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
 
         {%- elsif section.layout == "text" -%}
           <div class="pdf-text">
