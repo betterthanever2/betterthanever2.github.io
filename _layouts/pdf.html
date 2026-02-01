@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.name }}</title>
+    <link rel="stylesheet" href="{{ '/assets/pdf-export.css' | relative_url }}">
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
+

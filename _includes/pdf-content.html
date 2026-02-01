@@ -1,0 +1,156 @@
+{%- comment -%}
+  PDF Content Template (ATS-friendly)
+  - Renders resume content from `_config.yml` (site.*)
+  - Single include intended for PDF export pages/layouts
+  - Avoids interactive markup (no buttons/collapsibles)
+{%- endcomment -%}
+
+<div class="pdf-resume">
+  <header class="pdf-header">
+    <h1>{{ site.name }}</h1>
+
+    {%- if site.title -%}
+      <p><strong>{{ site.title }}</strong></p>
+    {%- endif -%}
+
+    <p>
+      {%- if site.email -%}
+        Email: {{ site.email }}<br>
+      {%- endif -%}
+      {%- if site.website -%}
+        Website: <a href="{{ site.website }}">{{ site.website }}</a><br>
+      {%- endif -%}
+      {%- if site.linkedin_username -%}
+        LinkedIn: <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">https://www.linkedin.com/in/{{ site.linkedin_username }}</a><br>
+      {%- endif -%}
+      {%- if site.github_username -%}
+        GitHub: <a href="https://github.com/{{ site.github_username }}">https://github.com/{{ site.github_username }}</a>
+      {%- endif -%}
+    </p>
+  </header>
+
+  {%- if site.about_content -%}
+    <h2>About Me</h2>
+    <div class="pdf-about">
+      {{ site.about_content | replace: '<mark>', '' | replace: '</mark>', '' | markdownify }}
+    </div>
+  {%- endif -%}
+
+  {%- assign pdf_section_order = "Experience|Education|Skills|Tools|Proof of Skill" | split: "|" -%}
+
+  {%- for wanted_title in pdf_section_order -%}
+    {%- for section in site.content -%}
+      {%- if section.title == wanted_title -%}
+        <h2>{{ section.title }}</h2>
+
+        {%- if section.title == "Skills" -%}
+          {%- if site.github_username -%}
+            {%- assign skills_url = "https://github.com/" | append: site.github_username | append: "/" | append: site.github_username | append: ".github.io/blob/main/_skills.yml" -%}
+            <p>
+              View detailed skills:
+              <a href="{{ skills_url }}">{{ skills_url }}</a>
+            </p>
+          {%- else -%}
+            <p>View detailed skills:</p>
+          {%- endif -%}
+
+          {%- if section.description -%}
+            <div class="pdf-section-note">
+              {{ section.description | markdownify }}
+            </div>
+          {%- endif -%}
+
+          {%- if section.content and section.content.size > 0 -%}
+            <ul class="pdf-simple-list">
+              {%- for item in section.content -%}
+                <li>
+                  {%- if item.title -%}
+                    <strong>{{ item.title }}</strong>
+                  {%- endif -%}
+                  {%- if item.set -%}
+                    ({{ item.set }})
+                  {%- endif -%}
+                  {%- if item.description -%}
+                    — {{ item.description }}
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+
+        {%- elsif section.layout == "list" -%}
+          {%- if section.description -%}
+            <div class="pdf-section-note">
+              {{ section.description | markdownify }}
+            </div>
+          {%- endif -%}
+
+          <div class="pdf-list">
+            {%- for item in section.content -%}
+              <div class="pdf-item">
+                <p>
+                  {%- if item.title -%}
+                    <strong>{{ item.title }}</strong>
+                  {%- endif -%}
+                  {%- if item.sub_title -%}
+                    {%- if item.title -%} — {% endif -%}{{ item.sub_title }}
+                  {%- endif -%}
+                  {%- if item.caption -%}
+                    <br>{{ item.caption }}
+                  {%- endif -%}
+                  {%- if item.link -%}
+                    {%- assign item_url = item.link -%}
+                    {%- unless item_url contains "://" -%}
+                      {%- assign item_url = "https://" | append: item_url -%}
+                    {%- endunless -%}
+                    <br>Link: <a href="{{ item_url }}">{{ item_url }}</a>
+                  {%- endif -%}
+                </p>
+
+                {%- if item.description -%}
+                  <div class="pdf-item-description">
+                    {{ item.description | markdownify }}
+                  </div>
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </div>
+
+        {%- elsif section.layout == "list-pane" -%}
+          {%- if section.description -%}
+            <div class="pdf-section-note">
+              {{ section.description | markdownify }}
+            </div>
+          {%- endif -%}
+
+          <ul class="pdf-simple-list">
+            {%- for item in section.content -%}
+              <li>
+                {%- if item.title -%}
+                  <strong>{{ item.title }}</strong>
+                {%- endif -%}
+                {%- if item.set -%}
+                  ({{ item.set }})
+                {%- endif -%}
+                {%- if item.description -%}
+                  — {{ item.description }}
+                {%- endif -%}
+              </li>
+            {%- endfor -%}
+          </ul>
+
+        {%- elsif section.layout == "text" -%}
+          <div class="pdf-text">
+            {{ section.content | markdownify }}
+          </div>
+
+        {%- else -%}
+          <div class="pdf-text">
+            {{ section.content | markdownify }}
+          </div>
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+</div>
+

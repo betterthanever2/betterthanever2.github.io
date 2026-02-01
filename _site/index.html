@@ -10,14 +10,12 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A modern static resume template and theme. Powered by Jekyll and GitHub pages." />
 <meta property="og:description" content="A modern static resume template and theme. Powered by Jekyll and GitHub pages." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Systems Architect" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Systems Architect" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"A modern static resume template and theme. Powered by Jekyll and GitHub pages.","headline":"Systems Architect","name":"Systems Architect","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"A modern static resume template and theme. Powered by Jekyll and GitHub pages.","headline":"Systems Architect","name":"Systems Architect","url":"/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"></head>
@@ -27,24 +25,41 @@
       <h1>Denis Shvetsov</h1>
       <h2>Systems Architect</h2>
     </div>
+
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
       <ul class="icons no-print"><li>
             <a target="_blank" href="https://github.com/betterthanever2" class="button button--sacnite button--round-l">
-              <i class="fab fa-github" title="Github link"></i>
+              <i class="fab fa-github" title="Github link" aria-hidden="true"></i>
+              <span class="sr-only">GitHub</span>
             </a>
           </li><li>
             <a target="_blank" href="https://www.linkedin.com/in/denis-shvetsov" class="button button--sacnite button--round-l">
-              <i class="fab fa-linkedin" title="Linkedin link"></i>
+              <i class="fab fa-linkedin" title="LinkedIn link" aria-hidden="true"></i>
+              <span class="sr-only">LinkedIn</span>
             </a>
-          </li>
+          </li><li>
+          <a
+            id="pdf-export-btn"
+            class="button button--sacnite button--round-l"
+            aria-label="Download PDF resume"
+            title="Download PDF"
+            href="/assets/Denis_Shvetsov_Systems_Architect_Resume.pdf"
+            download="Denis_Shvetsov_Systems_Architect_Resume.pdf"
+          >
+            <i class="fas fa-download" aria-hidden="true"></i>
+            <span class="hidden-xs">Download PDF</span>
+          </a>
+        </li>
       </ul><p>
-          Email: <a href="mailto:denis.shvetsov.me@gmail.com" target="_blank">denis.shvetsov.me@gmail.com</a>
+          Email:
+          <a href="mailto:d@subjective.agency" target="_blank">d@subjective.agency</a>
         </p><p>
-          Web: 
-<a href="https://betterthanever2.github.io/" target="_blank" class="">https://betterthanever2.github.io/</a>
+          Web:
+          <a href="https://betterthanever2.github.io/" target="_blank" class="">https://betterthanever2.github.io/</a>
         </p></div>
   </div>
 </div>
+
 <main class="page-content" aria-label="Content">
     <div class="wrapper"><div class="container intro-container">
   <h3 id="about-me">About Me</h3>
@@ -81,7 +96,7 @@
             <h3 id="skills">Skills</h3>
             <div class="list-pane-container">
     
-      <div class="section-description"><p>These are high-level competencies. Complete list of my skills is available <a href="https://github.com/betterthanever2/betterthanever2.github.io/blob/main/.a/_skills.yml">here</a>.</p>
+      <div class="section-description"><p>These are high-level competencies. Complete list of my skills in YAML format is available <a href="https://github.com/betterthanever2/betterthanever2.github.io/blob/main/_skills.yml">here</a>.</p>
 </div>
     
 
@@ -315,7 +330,7 @@
 
             
 
-            <div class="skill-text">Because I would rather avoid giant corporations</div>
+            <div class="skill-text">A typical Linux server with Docker or K8s</div>
           </div>
         </div>
       
@@ -328,7 +343,7 @@
 
             
 
-            <div class="skill-text">Because oftentimes giant corporations are unavoidable</div>
+            <div class="skill-text">Cloud provider with too vast of an array of services</div>
           </div>
         </div>
       
@@ -611,7 +626,7 @@
         
       </p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p>At CompStak I am working on setting up a consistent documentation process, as well as maintaining day-to-day documentation activities and assisting with knowledge sharing.</p>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p>At CompStak I am working on setting up a consistent documentation architecture across the company’s technical portfolio. I maintain day-to-day documentation activities, assist with knowledge sharing, research new tools and approaches. I created release notes template and process, and participated in defining other flows and processes. I also author and maintain API documentation, internal technical docs, runbooks, and other materials.</p>
 
     </div>
   </div>
@@ -688,7 +703,7 @@
         
       </p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p>During my work at the Moscow Translation Center I managed one of the translations offices in the city of Korolyov, Moscow region. Besides making sure that my office is working properly at all times, my responsibilities included actually performing the translations, keeping close contact with notary public, maintaining communications with a wide circle of freelance translators, and regular financial reporting.</p>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content"><p>Responsibilities included performing translations, managing office and finances.</p>
 
     </div>
   </div>
@@ -710,10 +725,12 @@
   <li>AsyncAPI specifications for all applications</li>
   <li>AsyncAPI specifications and diagrams for the cross-application flows</li>
   <li>Plain-language description of applications and initiatives</li>
-  <li>Detailed plans for various features, both implemented and planned; and more.</li>
+  <li>Elaborate intentions for various features, both implemented and planned;</li>
 </ul>
 
-<p>The code for the project is located <a href="https://github.com/subjective-agency/wapatools">here</a>, and is currently closed to the public. Details and access are available on request.</p>
+<p>and more.</p>
+
+<p>The code for the project is located <a href="https://github.com/subjective-agency/wapatools">here</a>, and is currently closed to the public. Details and access would be provided on request.</p>
 
   </div>
 </div>
@@ -772,7 +789,7 @@ I did acquire a number of foundational skills, and a few life-long friends.</p>
   </main><div class="container footer-container">
   <p>
     Denis Shvetsov -
-    <a href="mailto:denis.shvetsov.me@gmail.com" target="_blank">denis.shvetsov.me@gmail.com</a>&nbsp;- References on request</p>
+    <a href="mailto:d@subjective.agency" target="_blank">d@subjective.agency</a>&nbsp;- References on request</p>
 </div>
     <script src="/assets/js/index.js"></script>
   

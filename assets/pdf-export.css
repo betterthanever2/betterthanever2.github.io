@@ -1,0 +1,251 @@
+/*
+  PDF Export Stylesheet (ATS-friendly)
+  ------------------------------------------------------------
+  Goals:
+  - Single-column layout
+  - US Letter page size with 0.75" margins
+  - Standard fonts, high contrast (black on white)
+  - No multi-column / floats / complex layouts
+  - Ensure collapsible/hover-only content is visible in print/PDF
+*/
+
+/* Page box rules (print/PDF) */
+@page {
+  size: Letter;
+  margin: 0.75in;
+}
+
+@media print {
+  /* ===== Global reset for print clarity ===== */
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  body {
+    font-family: Arial, Calibri, Helvetica, "Times New Roman", Georgia, serif !important;
+    font-size: 11pt !important; /* 10–12pt body text */
+    line-height: 1.25 !important; /* 1.15–1.5 */
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background-image: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Avoid unexpected multi-column layouts */
+  * {
+    float: none !important;
+  }
+
+  /* Common layout containers: force single column */
+  .wrapper,
+  .container,
+  .page-content,
+  main,
+  section,
+  article,
+  aside,
+  div {
+    column-count: 1 !important;
+    column-gap: 0 !important;
+  }
+
+  /* Disable modern layout mechanisms that can create columns/boxes */
+  [class*="grid"],
+  [class*="columns"],
+  [class*="column"],
+  [class*="flex"],
+  .skills-grid {
+    display: block !important;
+    grid-template-columns: none !important;
+    grid-template-rows: none !important;
+    gap: 0 !important;
+    flex: none !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Ensure full-width content and predictable line wrapping */
+  .wrapper,
+  .container {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* ===== Hide interactive / non-resume UI ===== */
+  header:not(.pdf-header),
+  nav,
+  footer,
+  button,
+  .btn,
+  .skills-grid-controls,
+  .skills-grid-toggle,
+  [role="button"],
+  [aria-controls],
+  [data-toggle] {
+    display: none !important;
+  }
+
+  /* Keep generic hidden elements hidden... */
+  [hidden] {
+    display: none !important;
+  }
+
+  /* Hide decorative/media content that can confuse ATS parsers */
+  svg,
+  canvas,
+  video,
+  img {
+    display: none !important;
+  }
+
+  /* ===== Headings & section hierarchy ===== */
+  h1,
+  h2,
+  h3 {
+    color: #000 !important;
+    font-family: Arial, Calibri, Helvetica, "Times New Roman", Georgia, serif !important;
+    font-weight: 700 !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  h1 {
+    font-size: 16pt !important; /* 14–16pt headers */
+    margin: 0 0 10pt 0 !important;
+  }
+
+  h2 {
+    font-size: 14pt !important;
+    margin: 14pt 0 8pt 0 !important;
+  }
+
+  /* The theme uses <h3> for section titles in `default.html` */
+  h3 {
+    font-size: 14pt !important;
+    margin: 14pt 0 6pt 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+
+  p {
+    margin: 0 0 8pt 0 !important;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Keep sections together where possible */
+  .container {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* ===== Lists & bullets (standard symbols) ===== */
+  ul,
+  ol {
+    margin: 0 0 8pt 18pt !important;
+    padding: 0 !important;
+  }
+
+  li {
+    margin: 0 0 4pt 0 !important;
+    padding: 0 !important;
+  }
+
+  ul {
+    list-style-type: disc !important; /* • */
+  }
+
+  /* ===== Links: preserve, high-contrast, visible text ===== */
+  a,
+  a:visited {
+    color: #000 !important;
+    text-decoration: underline !important;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  /* ===== Skills grid: force expanded & show hover-only content ===== */
+  .skills-grid--collapsed {
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* The site hides cards via JS when collapsed; force them visible in print */
+  .skills-grid .skill-card {
+    display: block !important;
+    position: static !important;
+    margin: 0 0 8pt 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    color: #000 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    cursor: default !important;
+    transform: none !important;
+  }
+
+  /* ...but override the grid's JS-driven `hidden` cards for print/PDF. */
+  .skills-grid .skill-card[hidden] {
+    display: block !important;
+  }
+
+  /* Show the description inline (was tooltip/hover-only on screen) */
+  .skills-grid .skill-description {
+    display: block !important;
+    position: static !important;
+    width: auto !important;
+    margin: 2pt 0 0 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    color: #000 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    top: auto !important;
+    left: auto !important;
+  }
+
+  .skills-grid .skill-description strong {
+    color: #000 !important;
+    display: inline !important;
+    margin: 0 !important;
+    font-weight: 700 !important;
+  }
+
+  .skills-grid .skill-description .skill-meta {
+    color: #000 !important;
+    font-size: 10pt !important;
+    margin-top: 2pt !important;
+  }
+
+  .skills-grid .skill-description .skill-text {
+    margin-top: 2pt !important;
+  }
+
+  /* Reduce the section description styling to plain text for ATS */
+  .section-description {
+    margin: 0 0 10pt 0 !important;
+    padding: 0 !important;
+    font-size: 10pt !important;
+    line-height: 1.25 !important;
+    text-align: left !important;
+    color: #000 !important;
+    border: 0 !important;
+  }
+}
+

@@ -1,0 +1,59 @@
+<div class="container header-container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
+      <h1>{{ site.name }}</h1>
+      <h2>{{ site.title }}</h2>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
+      <ul class="icons no-print">
+        {%- if site.github_username -%}
+          <li>
+            <a target="_blank" href="https://github.com/{{ site.github_username }}" class="button button--sacnite button--round-l">
+              <i class="fab fa-github" title="Github link" aria-hidden="true"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
+          </li>
+        {%- endif -%}
+
+        {%- if site.linkedin_username -%}
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="button button--sacnite button--round-l">
+              <i class="fab fa-linkedin" title="LinkedIn link" aria-hidden="true"></i>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+        {%- endif -%}
+
+        <li>
+          <a
+            id="pdf-export-btn"
+            class="button button--sacnite button--round-l"
+            aria-label="Download PDF resume"
+            title="Download PDF"
+            href="{{ '/assets/Denis_Shvetsov_Systems_Architect_Resume.pdf' | relative_url }}"
+            download="Denis_Shvetsov_Systems_Architect_Resume.pdf"
+          >
+            <i class="fas fa-download" aria-hidden="true"></i>
+            <span class="hidden-xs">Download PDF</span>
+          </a>
+        </li>
+      </ul>
+
+      {%- if site.email -%}
+        <p>
+          Email:
+          <a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a>
+        </p>
+      {%- endif -%}
+
+      {%- if site.website -%}
+        <p>
+          Web:
+          <a href="{{ site.website }}" target="_blank" class="">{{ site.website }}</a>
+        </p>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
