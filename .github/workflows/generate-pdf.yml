@@ -51,7 +51,7 @@ jobs:
             --no-sandbox \
             --disable-gpu \
             --print-to-pdf="assets/Denis_Shvetsov_Systems_Architect_Resume.pdf" \
-            --print-to-pdf-no-header \
+            --no-pdf-header-footer \
             "http://127.0.0.1:4000/pdf.html"
 
       - name: Stop local server
