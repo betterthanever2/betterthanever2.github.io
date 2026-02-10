@@ -114,6 +114,39 @@
     const container = findSectionContainerByHeading(sectionTitle);
     if (!container) return '';
 
+    const sanitizeDescriptionHtmlForPdf = (rawHtml) => {
+      const html = String(rawHtml || '').trim();
+      if (!html) return '';
+
+      // Use a <template> to safely manipulate HTML fragments.
+      const tpl = document.createElement('template');
+      tpl.innerHTML = html;
+
+      // Replace Credly embeds with a single explicit URL line.
+      const credlyEmbeds = Array.from(
+        tpl.content.querySelectorAll('[data-share-badge-id][data-share-badge-host]'),
+      );
+      for (const el of credlyEmbeds) {
+        const badgeId = el.getAttribute('data-share-badge-id') || '';
+        const host = (el.getAttribute('data-share-badge-host') || 'https://www.credly.com').replace(/\/+$/, '');
+        const url = badgeId ? `${host}/badges/${badgeId}/public_url` : host;
+
+        const p = document.createElement('p');
+        p.appendChild(document.createTextNode('Credly: '));
+        const a = document.createElement('a');
+        a.href = url;
+        a.textContent = url;
+        p.appendChild(a);
+
+        el.replaceWith(p);
+      }
+
+      // Strip active/embedded content for ATS-friendly PDFs.
+      tpl.content.querySelectorAll('script, iframe').forEach((n) => n.remove());
+
+      return tpl.innerHTML.trim();
+    };
+
     const items = Array.from(container.querySelectorAll('.row.layout')).map((row) => {
       const details = row.querySelector('.details');
       const content = row.querySelector('.content');
@@ -125,7 +158,7 @@
       const linkEl = details?.querySelector('a.link');
       const link = normalizeUrl(linkEl?.getAttribute('href') || '');
 
-      const descriptionHtml = content?.innerHTML || '';
+      const descriptionHtml = sanitizeDescriptionHtmlForPdf(content?.innerHTML || '');
 
       const headerBits = [];
       if (org) headerBits.push(`<strong>${htmlEscape(org)}</strong>`);
@@ -234,6 +267,7 @@
     // Section order required by the task
     const about = buildAboutSection();
     const experience = buildListSection('Experience');
+    const certifications = buildListSection('Certifications');
     const education = buildListSection('Education');
     const skills = buildSkillsSection(headerInfo);
     const tools = buildToolsSection();
@@ -244,6 +278,7 @@
         ${buildContactBlock(headerInfo)}
         ${about}
         ${experience}
+        ${certifications}
         ${education}
         ${skills}
         ${tools}

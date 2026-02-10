@@ -170,6 +170,15 @@ content:
         set: Business Analysis
         description: Business analysis industry standard
 
+  - title: Certifications
+    layout: list
+    content:
+      - layout: top
+        title: Credly badges
+        description: |
+          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="5e953782-6856-41f7-928b-e8736b54a80f" data-share-badge-host="https://www.credly.com"></div>
+          <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
   - title: Experience
     layout: list
     content:
@@ -261,6 +270,8 @@ content:
           I spent 2 years studying cinema in the workshop by Sergei Solovyov & Valery Rubinchik (both - practicing film directors), and only 
           quit due to lack of funding. I enrolled because I love movies, and always had a thing for writing. Though it didn't work out for me,
           I did acquire a number of foundational skills, and a few life-long friends.
+
+
 
   - title: Broader Context
     layout: text

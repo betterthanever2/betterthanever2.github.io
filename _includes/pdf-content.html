@@ -36,7 +36,7 @@
     </div>
   {%- endif -%}
 
-  {%- assign pdf_section_order = "Experience|Education|Skills|Tools|Proof of Skill" | split: "|" -%}
+  {%- assign pdf_section_order = "Experience|Certifications|Education|Skills|Tools|Proof of Skill" | split: "|" -%}
 
   {%- for wanted_title in pdf_section_order -%}
     {%- for section in site.content -%}
@@ -91,7 +91,25 @@
 
                 {%- if item.description -%}
                   <div class="pdf-item-description">
-                    {{ item.description | markdownify }}
+                    {%- assign _desc = item.description | strip -%}
+                    {%- if _desc contains 'data-share-badge-id="' -%}
+                      {%- assign _host_parts = _desc | split: 'data-share-badge-host="' -%}
+                      {%- assign _host = "https://www.credly.com" -%}
+                      {%- if _host_parts.size > 1 -%}
+                        {%- assign _host = _host_parts[1] | split: '"' | first -%}
+                      {%- endif -%}
+
+                      {%- assign _id_parts = _desc | split: 'data-share-badge-id="' -%}
+                      {%- assign _badge_id = "" -%}
+                      {%- if _id_parts.size > 1 -%}
+                        {%- assign _badge_id = _id_parts[1] | split: '"' | first -%}
+                      {%- endif -%}
+
+                      {%- assign _badge_url = _host | append: "/badges/" | append: _badge_id | append: "/public_url" -%}
+                      <p>Credly: <a href="{{ _badge_url }}">{{ _badge_url }}</a></p>
+                    {%- else -%}
+                      {{ item.description | markdownify }}
+                    {%- endif -%}
                   </div>
                 {%- endif -%}
               </div>
